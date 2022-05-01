@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu113/"
+verify_ssl = true
+name = "pytorch"
+
+[packages]
+numpy = {version="*"}
+torch = {version = "==1.11.0+cu113", index = "pytorch"}
+ipykernel = "*"
+pytorch-lightning = "*"
+matplotlib = "*"
+ipywidgets = "*"
+pandas = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
